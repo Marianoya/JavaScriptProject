@@ -8,181 +8,114 @@
     
 </head>
 <body>
-    
-    <header>
-        
+ 
 
-        <div class="cabecero">
+    <section class="cabecero">
 
         <div class="presupuesto">
 
         <div class="presupuesto_titulo">Presupuesto Disponible</div>
 
+        <div class="presupuesto_valor">2,300.00 MXN</div>
+        <div class="presupuesto_ingreso limpiarEstilos">
+            <div class="presupuesto_ingreso--texto">INGRESOS</div>
+            <div class="presupuest_ingreso--valor derecha">3,600.00</div>
+        </div>
+        <div class="presupuesto_egreso limpiarEstilos">
+            <div class="presupuesto_egreso--texto">EGRESOS</div>
+            <div class="presupuest_egreso--valor derecha">3,600.00</div>
         </div>
         </div>
-
-        <div class="presupuesto_valor">+2,000.00.</div>
-
-            <div class="presupuesto_ingreso">
-
-                <div class="presupuesto_ingreso--texto">Ingresos</div>
-            </div>
-            <div class="limpiarEstilos">
-                <div class="derecha">
-                    <div class="presupuesto_ingreso--valor">+4,000.00</div>
-                    <div class="presupuesto_ingreso--porcentaje"> </div>
-
-
-                <div class="presupuesto_egreso">
-
-                <div class="presupuesto_egreso--texto">Egresos</div>
-            </div>
-                <div class="limpiarEstilos">
-                    <div class="derecha">
-                        <div class="presupuesto_egreso--valor"> -1,900.00.</div>
-                    </div>
-                    <div class="limpiarEstilos">
-                        <div class="presupuesto_egreso--porcentaje">45%</div>
-
-            </div>
-        </div>
-
-        <form id="forma">
-            <div class="agregar">
-                <div class="agregar_contenedor">
-
-                    <select name="" id="tipo" class="agregar_tipo">
-
-                        class.valoringreso
-                    </select>
-                 <input type="text" id="descripion" class="agregar_descripcion">Agregar Descripcion<input/>
-                 <input type="number" class="agregar_valor">Valor and step any<input/>
-
-
-                       <button class class="agregar_btn">
-                            <label for="ion-icon">checkmark-circle-outline</label>
-
-                        </class>
-
-
-                       </button> 
+    </section>   
+    
+    <form id="forma">
+        <section class="agregar">
+            <div class="agregar_contenedor">
+                <select class="agregar_tipo" id="tipo">
+                    <option value="ingreso" selected>+</option>
+                    <option value="egreso">-</option>
+                </select>
+                <input id="descripcion" class="agregar_descripcion" placeholder="Agregar descripción" />
+                <input step="any" type="number" class="agregar_valor" placeholder="Valor" />
+                <div class="agregar_btn">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
                 </div>
-
-
             </div>
+        </section>
+    </form>
 
-
-        </form>
-        
-    </header>
-
-    <div>
-        <div class="contenedor"></div>
-        <div class="limpiarEstilos">
-
-            <contenedor class="ingreso"></contenedor>
-            <h2 class="ingreso_titulo">Ingresos</h2>
-            <div id="lista-ingresos">
-                <div class="elementos"></div>
-                <div class="limpiarEstilos"></div>
-            </div>
-            <div class="elemento_descripcion">salario
-                <div class="elemento_valor">+2,200.00</div>
-            </div>
-            <div class="derecha"></div>
-            <div class="limpiarEstilos">
-                 
+    <section class="contenedor limpiarEstilos">
+        <section class="ingreso">
+        <h2 class="ingreso_titulo">INGRESOS</h2>
+        <div id="lista-ingresos">
+        <article class="elemento limpiarEstilos">
+            <div class="elemento_descripcion">Salario</div>
+            <div class="derecha limpiarEstilos">
+                <div class="elemento_valor">+2,100.00 MXN</div>
                 <div class="elemento_eliminar">
-
                     <button class="elemento_eliminar_btn">
-
-                            <icon type="ion-icon">close-circle-outline</label>
-
-                        </div>
+                        <ion-icon name="close-circle-outline"></ion-icon>
                     </button>
-
-                    <div class="elemento"></div>
-                    <div class="elemento_descripcion">Venta Coche
-                        <div class="elemento_valor">+1,500.00</div>
-                    </div>
-                    <div class="limpiarEstilos">
-                        <div class="derecha"></div>
-                        <div class="limpiarEstilos">
-                        
-                            <div class="elemento_eliminar">
-                                <button class="elemento_eliminar_btn">
-
-                                        <icon type="ion-icon">close-circle-outline</label>
-
-                                    </div>
-                                </button>
-
-
-                            </div>
-
-
-
-                        </div>
-
-
-                    </div>
-
-        
                 </div>
+        </div>
+    </article>
+        <article class="elemento limpiarEstilos">
+                <div class="elemento_descripcion">    Venta de coche </div>
+                <div class="derecha limpiarEstilos">
+                <div class="elemento_valor">+1,500.00 MXN</div>
+            <div class="elemento_eliminar">
+                <button class="elemento_eliminar_btn">
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                </button>
+            </div>
+            </div>
+            
+        </article>
+    </div>
+        </section>
+
+        <section class="egreso">
+        <h2 class="egreso_titulo">EGRESOS</h2>
+        <div id="lista-egresos">
+            <article class="elemento limpiarEstilos">
+            <div class="elemento_descripcion">
+                Renta Departamento
+            </div>
+            <div class="derecha limpiarEstilos">
+                <div class="elemento_valor">-900.00 MXN</div>
+                <div class="elemento_porcentaje">30%</div>
+                <div class="elemento_eliminar">
+                    <button class="elemento_eliminar_btn">
+                     <ion-icon name="close-circle-outline"></ion-icon>
+
+                    </button>
+                </div>
+            </div>
+            </article>
+
+        <article class="elemento limpiarEstilos">
+            <div class="elemento_descripcion">
+                Ropa
+            </div>
+            <div class="derecha limpiarEstilos">
+
+            <div class="elemento_valor">-400.00 MXN</div>
+            <div class="elemento_porcentaje">30%</div>
+            <div class="elemento_eliminar">
+                <button class="elemento_eliminar_btn">
+                    <ion-icon name="close-circle-outline"></ion-icon>
+
+                </button>
 
             </div>
-
-
-            <contenedor class="egreso"></contenedor>
-
-            <h2 class="egreso_titulo">Egresos</H2>
-                <div id="lista-egresos">
-                    <div class="elemento"></div>
-                    <div class="elemento_descripcion">Renta departamento</div>
-
-                    <div class="limpiarEstilos"></div>
-                    <div class="derecha"></div>
-                    <div class="limpiarEstilos">
-                        <div class="elemento_valor">-900.00</div>
-                        <div class="elemento_porcentaje">21%</div>
-                        <div class="elemento_eliminar">
-
-                            <button>
-                                <label for="ion-icon">close-circle-outline</label>
-
-                            </button>
-                        </div>
-
-                        <div class="elemento"></div>
-                        <div class="derechaylimpiarEstilos">
-                            <div class="elemento_valor">-400.00</div>
-                            <div class="elemento_porcentaje">9%</div>
-                            <div class="elemento_eliminar">
-                                <button>
-                                    <div class="elemento_eliminar_btn"></div>
-
-                                    <label for="ion-icon">close-circle-outline</label>
-
-                                </button>
-
-
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-
-
         </div>
 
+        </article>
+        </div>
+        </section>
+    </section>
 
-    </div>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js."> </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"> </script>
     
 </body>
 </html>
